@@ -105,7 +105,7 @@
 
 						<!-- Gallery -->
 							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
+								<article id="a1">
 									<div class="video" id="JO" hidden="true">
 										<video id="jo_money" width="100%" controls muted>
 											<source src="./video/jo_money.mp4" type="video/mp4">
@@ -113,7 +113,9 @@
 										</video>
 										<img src="images/icons8-macos-close-32.png" alt="close" class="close" onclick="toggle('JO', 'jo_money')"/>
 									</div>
-									<img src="images/gallery/thumbs/jomoney.png" alt="Jo_money symbol" onclick="toggle('JO', 'jo_money')" />
+									<!-- <a href="#a1" class="image"> -->
+										<img src="images/gallery/thumbs/jomoney.png" alt="Jo_money symbol" onclick="toggle('JO', 'jo_money')" />
+									<!-- </a> -->
 									<div class="caption">
 										<h3>Jo_Project</h3>
 										<p>video walk through</p>
@@ -125,18 +127,18 @@
 									</div>
 								</article>
 								<article>
-									<a href="#" class="image">
+									<!-- <a href="https://github.com/Banapple01/Bug-tracker" target="_blank" class="image"> -->
 										<img src="images/gallery/thumbs/02.jpg" alt="" />
-									</a>
+									<!-- </a> -->
 									<div class="caption">
 										<h3>Bug Tracker</h3>
 										<p>Using Django as a backend and React as a frontend. Keep track of your project bugs and get other users suggestions on fixing them. (Still in progress.)</p>
 										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
+											<li><span class="button small"><a href="https://github.com/Banapple01/Bug-tracker" target="_blank">Details</a></span></li>
 										</ul>
 									</div>
 								</article>
-								<article>
+								<!-- <article>
 									<a href="#" class="image">
 										<img src="images/gallery/thumbs/03.jpg" alt="" />
 									</a>
@@ -255,7 +257,7 @@
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
-								</article>
+								</article> -->
 							</div>
 
 					</section>
