@@ -70,7 +70,7 @@
 							<p>This Project was created using Python Django and MySQL as the Database. Keep track of all your favorite movies. Add more, edit the shows present or delete them entirely.</p>
 							<ul class="actions stacked">
 								<li><a href="https://github.com/Banapple01/Coding_Dojo-School-work/tree/master/Dojo_Assignments/Python/django/django_fullstack/tv_shows_proj" target="_blank" class="button">Check out the repo</a></li>
-								<li><a href="#two" onclick="toggle('TV', 'tvshows')" class="button">walk-through</a></li>
+								<li><a href="#two" onclick="toggle('TV', 'tvshows', true)" class="button">walk-through</a></li>
 							</ul>
 						</div>
 						<div class="video" id="TV" hidden="true">
@@ -78,10 +78,10 @@
 								<source src="./video/TVShows.mp4" type="video/mp4">
 								Your browser does not support HTML video.
 							</video>
-							<img src="images/icons8-macos-close-32.png" alt="close" class="close" onclick="toggle('TV', 'tvshows')"/>
+							<img src="images/icons8-macos-close-32.png" alt="close" class="close" onclick="toggle('TV', 'tvshows', false)"/>
 						</div>
 						<div class="image">
-							<img src="images/tv_shows.png" alt="Tv shows Project" onclick="toggle('TV', 'tvshows')" />
+							<img src="images/tv_shows.png" alt="Tv shows Project" onclick="toggle('TV', 'tvshows', true)" />
 						</div>
 					</section>
 
@@ -105,7 +105,7 @@
 							<h2>P & D Towing</h2>
 							<p>Fill out a simple form and have the nearest vehicle service provider headed your direction. Using Google maps API, and Djangos built in email messaging.</p>
 							<ul class="actions stacked">
-								<li><a href="#four" onclick="toggle('PDT', 'pdtowing')" class="button">walk-through</a></li>
+								<li><a href="#four" onclick="toggle('PDT', 'pdtowing', true)" class="button">walk-through</a></li>
 							</ul>
 						</div>
 						<div class="video" id="PDT" hidden="true">
@@ -113,10 +113,10 @@
 								<source src="./video/P&D.mp4" type="video/mp4">
 								Your browser does not support HTML video.
 							</video>
-							<img src="images/icons8-macos-close-32.png" alt="close" class="close" onclick="toggle('PDT', 'pdtowing')"/>
+							<img src="images/icons8-macos-close-32.png" alt="close" class="close" onclick="toggle('PDT', 'pdtowing', false)"/>
 						</div>
 						<div class="image">
-							<img src="images/P&DT.png" alt="Pickup & Delivery Towing" onclick="toggle('PDT', 'pdtowing')" />
+							<img src="images/P&DT.png" alt="Pickup & Delivery Towing" onclick="toggle('PDT', 'pdtowing', true)" />
 						</div>
 					</section>
 
@@ -135,10 +135,10 @@
 											<source src="./video/jo_money.mp4" type="video/mp4">
 											Your browser does not support HTML video.
 										</video>
-										<img src="images/icons8-macos-close-32.png" alt="close" class="close" onclick="toggle('JO', 'jo_money')"/>
+										<img src="images/icons8-macos-close-32.png" alt="close" class="close" onclick="toggle('JO', 'jo_money', false)"/>
 									</div>
 									<!-- <a href="#a1" class="image"> -->
-										<img src="images/gallery/thumbs/jomoney.png" alt="Jo_money symbol" onclick="toggle('JO', 'jo_money')" />
+										<img src="images/gallery/thumbs/jomoney.png" alt="Jo_money symbol" onclick="toggle('JO', 'jo_money', true)" />
 									<!-- </a> -->
 									<div class="caption">
 										<h3>Jo_Project</h3>
@@ -411,11 +411,15 @@
 			<script src="assets/js/main.js"></script>
 
 			<script type="text/javascript">
-			function toggle(divId, videoId){
+			function toggle(divId, videoId, tru){
 				var videoDiv = document.querySelector(".video#" + divId)
 				var video = document.getElementById(videoId)
 				videoDiv.classList.toggle("active")
-				video.pause()
+				if(tru == true) {
+					video.play()
+				}else {
+					video.pause()
+				}
 			}
 			</script>
 
