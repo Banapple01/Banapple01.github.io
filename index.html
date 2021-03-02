@@ -40,16 +40,24 @@
 					</section>
 
 				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<section id="two" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
 							<h2>TV Shows</h2>
 							<p>This Project was created using Python Django and MySQL as the Database. Keep track of all your favorite movies. Add more, edit the shows present or delete them entirely.</p>
 							<ul class="actions stacked">
 								<li><a href="https://github.com/Banapple01/Coding_Dojo-School-work/tree/master/Dojo_Assignments/Python/django/django_fullstack/tv_shows_proj" target="_blank" class="button">Check out the repo</a></li>
+								<li><a href="#two" onclick="toggle('TV', 'tvshows')" class="button">walk-through</a></li>
 							</ul>
 						</div>
+						<div class="video" id="TV" hidden="true">
+							<video id="tvshows" width="100%" controls muted>
+								<source src="./video/TVShows.mp4" type="video/mp4">
+								Your browser does not support HTML video.
+							</video>
+							<img src="images/icons8-macos-close-32.png" alt="close" class="close" onclick="toggle('TV', 'tvshows')"/>
+						</div>
 						<div class="image">
-							<img src="images/tv_shows.png" alt="Tv shows Project" />
+							<img src="images/tv_shows.png" alt="Tv shows Project" onclick="toggle('TV', 'tvshows')" />
 						</div>
 					</section>
 
@@ -68,17 +76,17 @@
 					</section>
 
 				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<section id="four" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>P & D Towing</h2>
-							<p>Fill out a simple form and have the nearest vehicle service provider headed your direction. Using Google maps API, Amazon SMS, and Djangos built in email messaging.</p>
-							<!-- <ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul> -->
+							<p>Fill out a simple form and have the nearest vehicle service provider headed your direction. Using Google maps API, and Djangos built in email messaging.</p>
+							<ul class="actions stacked">
+								<li><a href="#four" onclick="toggle('PDT', 'pdtowing')" class="button">walk-through</a></li>
+							</ul>
 						</div>
 						<div class="video" id="PDT" hidden="true">
 							<video id="pdtowing" width="100%" controls muted>
-								<source src="./video/zoom_0.mp4" type="video/mp4">
+								<source src="./video/P&D.mp4" type="video/mp4">
 								Your browser does not support HTML video.
 							</video>
 							<img src="images/icons8-macos-close-32.png" alt="close" class="close" onclick="toggle('PDT', 'pdtowing')"/>
@@ -100,7 +108,7 @@
 								<article>
 									<div class="video" id="JO" hidden="true">
 										<video id="jo_money" width="100%" controls muted>
-											<source src="./video/zoom_0.mp4" type="video/mp4">
+											<source src="./video/jo_money.mp4" type="video/mp4">
 											Your browser does not support HTML video.
 										</video>
 										<img src="images/icons8-macos-close-32.png" alt="close" class="close" onclick="toggle('JO', 'jo_money')"/>
